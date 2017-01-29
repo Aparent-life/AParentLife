@@ -1,0 +1,30 @@
+{
+  "name": "aparent-life",
+  "version": "1.0.0",
+  "description": "Portfolio piece for AParent-life.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aparent-life/AParentLife.git"
+  },
+  "keywords": [
+    "Parenting",
+    "Nutrition",
+    "Training",
+    "Lifestyle",
+    "Fit-Lifestyle"
+  ],
+  "author": "Ventocl.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aparent-life/AParentLife/issues"
+  },
+  "homepage": "https://github.com/Aparent-life/AParentLife#readme",
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "normalize.css": "^5.0.0"
+  }
+}
