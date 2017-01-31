@@ -1,0 +1,18 @@
+.social-media {
+  float: right;
+
+  &__icons {
+
+    &--facebook {
+      background-color: $mainBlue;
+    }
+
+    &--twitter {
+      background-color: $lightBlue;
+    }
+
+    &--youtube {
+      background-color: $mainRed;
+    }
+  }
+}
