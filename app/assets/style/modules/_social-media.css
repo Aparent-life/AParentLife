@@ -1,8 +1,7 @@
 .social-media {
-  float: right;
 
   &__icons {
-
+  
     &--facebook {
       background-color: $mainBlue;
     }

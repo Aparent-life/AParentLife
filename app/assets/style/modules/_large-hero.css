@@ -1,0 +1,8 @@
+.large-hero {
+  position: absolute;
+  top: 0;
+
+  &--icons {
+    text-align: center;
+  }
+}
