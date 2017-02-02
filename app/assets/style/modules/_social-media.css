@@ -1,7 +1,8 @@
 .social-media {
 
+/* Begin Styling Elements */
   &__icons {
-  
+
     &--facebook {
       background-color: $mainBlue;
     }

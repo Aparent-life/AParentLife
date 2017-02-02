@@ -1,8 +1,22 @@
 .large-hero {
-  position: absolute;
-  top: 0;
 
-  &--icons {
-    text-align: center;
+
+/* Begin Styling Elements */
+  &__icons {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: .5rem;
+    z-index: 2;
+  }
+
+  &__img {
+    position: fixed;
+    top: 0;
+    padding-top: 2.625rem; /* Size of Social Icons */
+    background-color: #000;
   }
 }
