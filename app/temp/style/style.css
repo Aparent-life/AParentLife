@@ -460,13 +460,21 @@ template {
   display: none;
 }
 
-body {
+html, body {
+  height: 100%;
+  width: 100%;
   color: #333;
+  margin: 0;
+  padding: 0;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+li {
+  list-style: none;
 }
 
 /* rgba(23, 186, 34, 1) */
@@ -485,6 +493,10 @@ img {
 
 /* rgba(255, 182, 71, 1) */
 
+/* rgba(144, 137, 137, 1) */
+
+/* rgba(17, 136, 25, 1) */
+
 /* Begin Styling Elements */
 
 .social-media__icons--facebook {
@@ -502,7 +514,7 @@ img {
 /* Begin Styling Elements */
 
 .large-hero__icons {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -514,8 +526,103 @@ img {
 }
 
 .large-hero__img {
-  position: fixed;
+  position: absolute;
   top: 0;
   padding-top: 2.625rem;/* Size of Social Icons */
   background-color: #000;
+}
+
+.slides {
+  height: 27.875rem;
+  width: 52.5rem;
+  -webkit-transform: translateX(70%);
+          transform: translateX(70%);
+  background: #120103;
+  position: relative;
+  overflow: hidden;
+  color: #FFF;
+  text-align: center;
+}
+
+/* Begin Styling Elements */
+
+.slides__header {
+  background: #3E474F;
+  box-shadow: 0 .5em 1em #111;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+}
+
+.slides__labels {
+  color: #788188;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 2.5em;
+  font-size: .8em;
+  font-weight: 400;
+  padding: 0 1em;
+}
+
+.slides__labels:hover {
+  background: #2e353b;
+}
+
+/* Begin styling Modifiers */
+
+.slides--img {
+  height: 27.875rem;
+  width: 49.5rem;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  z-index: 10;
+  padding: 8em 1em 0;
+  background-color: #120103;
+  background-position: 50% 50%;
+  background-size: contain;
+  background: no-repeat;
+  -webkit-transform: translateX(3%);
+          transform: translateX(3%);
+  -webkit-transition: opacity 0s .75s;
+  transition: opacity 0s .75s;
+}
+
+.slides--one {
+  background-image: url('/assets/images/videoSlideshow/Food-Scale.jpg');
+}
+
+.slides--two {
+  background-image: url('/assets/images/videoSlideshow/Macros.jpg');
+}
+
+.slides--three {
+  background-image: url('/assets/images/videoSlideshow/Meal-Frequency.jpg');
+}
+
+.slides--four {
+  background-image: url('/assets/images/videoSlideshow/Chipotle-Chicken.jpg');
+}
+
+.slides--five {
+  background-image: url('/assets/images/videoSlideshow/Flexible-Dieting.png');
+}
+
+.slides--six {
+  background-image: url('/assets/images/videoSlideshow/WeighingIn.jpg');
+}
+
+.slides--seven {
+  background-image: url('/assets/images/videoSlideshow/OneSmallChange.jpg');
+}
+
+/* Begin Attribute selections */
+
+.slides [id^='slide']:checked + .slides--img {
+  opacity: 1;
+  z-index: 100;
+  -webkit-transition: opacity .65s ease-out;
+  transition: opacity .65s ease-out;
 }

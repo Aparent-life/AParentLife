@@ -3,7 +3,7 @@
 
 /* Begin Styling Elements */
   &__icons {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -14,7 +14,7 @@
   }
 
   &__img {
-    position: fixed;
+    position: absolute;
     top: 0;
     padding-top: 2.625rem; /* Size of Social Icons */
     background-color: #000;
