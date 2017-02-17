@@ -3,7 +3,7 @@
 
 /* Begin Styling Elements */
   &__icons {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);

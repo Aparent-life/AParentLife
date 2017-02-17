@@ -475,6 +475,11 @@ img {
 
 li {
   list-style: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* rgba(23, 186, 34, 1) */
@@ -514,7 +519,7 @@ li {
 /* Begin Styling Elements */
 
 .large-hero__icons {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -625,4 +630,91 @@ li {
   z-index: 100;
   -webkit-transition: opacity .65s ease-out;
   transition: opacity .65s ease-out;
+}
+
+.side-nav {
+  position: relative;
+  z-index: 1;
+
+}
+
+/* Begin Styling Elements */
+
+.side-nav__pages {
+  position: fixed;
+  right: -6rem;
+  background: #2f5572;
+  width: 6.5rem;
+  border-radius: .75rem 0 0 .75rem;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.side-nav__pages li {
+  margin-left: -1em;
+  padding: 0.3125rem 0;
+}
+
+.side-nav__pages a {
+  color: #70b3e6;
+  padding-bottom: .125rem;
+  opacity: 0;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.side-nav__pages a:hover {
+  color: #FFF;
+  border-bottom: 2px solid #da1b1b;
+}
+
+.side-nav__menuArrow {
+  position: fixed;
+  right: .5rem;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+  color: #118819;
+  margin-top: 3rem;
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.side-nav__menuArrow:hover {
+  color: #ff9900;
+}
+
+#menuToggler {
+display: none;
+
+}
+
+#menuToggler:checked + .side-nav .side-nav__menuArrow {
+  -webkit-transform: scale(2) rotate(180deg);
+          transform: scale(2) rotate(180deg);
+  color: #ff9900;
+  right: 8.25rem;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+#menuToggler:checked + .side-nav .side-nav__menuArrow:hover {
+  color: #118819;
+}
+
+#menuToggler:checked + .side-nav .side-nav__pages {
+  right: 0;
+  box-shadow: 2px 2px 20px #000;
+}
+
+#menuToggler:checked + .side-nav .side-nav__pages a {
+  opacity: 1;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+#menuToggler:checked + .side-nav .side-nav__pages a:hover {
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
 }

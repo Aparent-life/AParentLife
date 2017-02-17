@@ -1,0 +1,35 @@
+#menuToggler {
+display: none;
+
+  &:checked + .side-nav {
+
+    .side-nav{
+
+      &__menuArrow {
+        transform: scale(2) rotate(180deg);
+        color: $mainOrange;
+        right: 8.25rem;
+        transition: all .3s ease-out;
+
+        &:hover {
+          color: $darkGreen;
+        }
+      }
+
+      &__pages {
+        right: 0;
+        box-shadow: 2px 2px 20px #000;
+
+         a {
+          opacity: 1;
+          transition: all 1s ease-out;
+
+          &:hover {
+            transition: all .3s ease-out;
+          }
+        }
+      }
+    }
+  }
+
+}
