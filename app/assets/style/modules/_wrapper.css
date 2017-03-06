@@ -1,0 +1,7 @@
+.wrapper {
+  padding: 0 2rem;
+
+  @mixin atMedium {
+    padding: 0 4rem;
+  }
+}

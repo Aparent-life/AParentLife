@@ -500,7 +500,17 @@ a {
 
 /* rgba(144, 137, 137, 1) */
 
+/* rgba(255, 65, 65, 1) */
+
 /* rgba(17, 136, 25, 1) */
+
+/* rgba(33, 36, 63, 1) */
+
+/* rgba(115, 33, 50, 1) */
+
+/* rgba(74, 69, 69, 1) */
+
+/* rgba(26, 60, 29, 1) */
 
 /* Begin Styling Elements */
 
@@ -528,13 +538,6 @@ a {
   margin-right: auto;
   padding-right: .5rem;
   z-index: 2;
-}
-
-.large-hero__img {
-  position: absolute;
-  top: 0;
-  padding-top: 2.625rem;/* Size of Social Icons */
-  background-color: #000;
 }
 
 .slides {
@@ -717,4 +720,77 @@ display: none;
 #menuToggler:checked + .side-nav .side-nav__pages a:hover {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
+}
+
+.wrapper {
+  padding: 0 2rem;
+}
+
+@media (min-width: 800px) {
+
+  .wrapper {
+    padding: 0 4rem;
+  }
+}
+
+.page-section {
+padding: 1rem 2rem;
+}
+
+@media (min-width: 800px) {
+
+  .page-section {
+    padding: 2rem 4rem;
+    opacity: .5;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+  }
+
+  .page-section:hover {
+    opacity: 1;
+    -webkit-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+  }
+}
+
+/* Begin Styling Elements */
+
+.page-section__heading--large {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.page-section__mission-statement {
+  background-color: #4a4545;
+  color: #ff9900;
+  text-align: center;
+}
+
+.page-section__training {
+  background-color: #21243f;
+  color: #ff4141;
+}
+
+.page-section__nutrition {
+  background-color: #732132;
+  color: #70b3e6;
+}
+
+.page-section__parenting {
+  background-color: #1a3c1d;
+  color: #ffb647;
+}
+
+/* Begin Styling Modifiers */
+
+.page-section--content {
+  padding: 0 2rem;
+}
+
+@media (min-width: 800px) {
+
+  .page-section--content {
+    padding: 0 6rem;
+  }
 }

@@ -4,7 +4,15 @@ $mainRed: #da1b1b; /* rgba(218, 27, 27, 1) */
 $mainGrey: #787171; /* rgba(120, 113, 113, 1) */
 $mainOrange: #ff9900;/* rgba(255, 153, 0, 1) */
 $mainWhite: #FFF; /* rgba(255, 255, 255, 1) */
+
 $lightBlue: #70b3e6; /* rgba(112, 179, 230, 1) */
 $lightOrange: #ffb647; /* rgba(255, 182, 71, 1) */
 $lightGrey: #908989; /* rgba(144, 137, 137, 1) */
+$lightRed: #ff4141; /* rgba(255, 65, 65, 1) */
+
 $darkGreen: #118819; /* rgba(17, 136, 25, 1) */
+$darkBlue: #21243f; /* rgba(33, 36, 63, 1) */
+$darkRed: #732132; /* rgba(115, 33, 50, 1) */
+$darkGrey: #4a4545; /* rgba(74, 69, 69, 1) */
+
+$darkestGreen: #1a3c1d; /* rgba(26, 60, 29, 1) */

@@ -12,11 +12,4 @@
     padding-right: .5rem;
     z-index: 2;
   }
-
-  &__img {
-    position: absolute;
-    top: 0;
-    padding-top: 2.625rem; /* Size of Social Icons */
-    background-color: #000;
-  }
 }

@@ -1,0 +1,52 @@
+.page-section {
+padding: 1rem 2rem;
+
+
+  @mixin  atMedium {
+    padding: 2rem 4rem;
+    opacity: .5;
+    transition: all .3s ease-out;
+
+      &:hover {
+        opacity: 1;
+        transition: all .3s ease-out;
+      }
+  }
+
+/* Begin Styling Elements */
+  &__heading--large {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  &__mission-statement {
+    background-color: $darkGrey;
+    color: $mainOrange;
+    text-align: center;
+  }
+
+  &__training {
+    background-color: $darkBlue;
+    color: $lightRed;
+  }
+
+  &__nutrition {
+    background-color: $darkRed;
+    color: $lightBlue;
+  }
+
+  &__parenting {
+    background-color: $darkestGreen;
+    color: $lightOrange;
+  }
+
+  /* Begin Styling Modifiers */
+  &--content {
+    padding: 0 2rem;
+
+    @mixin atMedium {
+      padding: 0 6rem;
+    }
+  }
+}
