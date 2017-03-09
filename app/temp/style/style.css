@@ -512,32 +512,75 @@ a {
 
 /* rgba(26, 60, 29, 1) */
 
+.social-media {
+  width: 2.5rem;
+
+}
+
 /* Begin Styling Elements */
 
+.social-media__icons {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 wrap;
+          flex: 1 wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  top: 20%;
+  z-index: 2;
+  width: 2.25rem;
+  margin-left: .25rem;
+}
+
+/* Begin Styling Modifiers */
+
+.social-media__icons--arrow {
+  background: #FFF;
+  padding: 5rem;
+  z-index: 4;
+}
+
 .social-media__icons--facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .25rem;
+  border-radius: .25rem;
+  -webkit-transform: scale(.9);
+          transform: scale(.9);
   background-color: #2f5572;
 }
 
 .social-media__icons--twitter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 .25rem;
+  border-radius: 50%;
+  -webkit-transform: scale(.9);
+          transform: scale(.9);
+  -webkit-transform-origin: left;
+          transform-origin: left;
   background-color: #70b3e6;
 }
 
 .social-media__icons--youtube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: .125rem;
+  -webkit-transform: scale(.9);
+          transform: scale(.9);
+  border-radius: .5rem;
   background-color: #da1b1b;
 }
 
-/* Begin Styling Elements */
+.large-hero {
 
-.large-hero__icons {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: .5rem;
-  z-index: 2;
+
+/* Begin Styling Elements */
+  
 }
 
 .slides {
@@ -742,14 +785,14 @@ padding: 1rem 2rem;
   .page-section {
     padding: 2rem 4rem;
     opacity: .5;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
   }
 
   .page-section:hover {
     opacity: 1;
-    -webkit-transition: all .3s ease-out;
-    transition: all .3s ease-out;
+    -webkit-transition: all .5s easeout;
+    transition: all .5s easeout;
   }
 }
 
