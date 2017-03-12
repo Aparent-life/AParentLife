@@ -9,6 +9,10 @@
     color: $mainWhite;
     padding-bottom: .25em;
 
+    &:hover {
+      color: $lightOrange;
+    }
+
     &:after {
       content: '';
        display: block;
@@ -16,7 +20,7 @@
        height: 2px;
        width: 0px;
        background: transparent;
-       transition: width .5s ease, background-color .5s ease;
+       transition: all .3s ease;
     }
 
     &:hover:after {

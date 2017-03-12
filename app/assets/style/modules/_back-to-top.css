@@ -1,0 +1,14 @@
+.back-to-top {
+  position: fixed;
+  right: .25rem;
+  bottom: 2.125rem;
+  border-radius: 50%;
+  transform: scale(.5);
+  background: $lightOrange;
+  padding: 0;
+
+  @mixin atMedium {
+    transform: scale(.75);
+    bottom: 1.5rem;
+  }
+}
