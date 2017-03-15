@@ -6,7 +6,7 @@ class BackToTop {
     this.events();
   }
 
-  events(){
+  events() {
     this.backToTopIcon.click(this.BackToTop);
   }
 
