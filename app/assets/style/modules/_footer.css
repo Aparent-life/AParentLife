@@ -2,4 +2,14 @@
   background: $darkGrey;
   padding: 1rem 0;
   text-align: center;
+
+/* Begin Styling Elements */
+
+  &__design-by {
+    color: #FFF;
+
+    &:hover {
+      color: $lightOrange;
+    }
+  }
 }

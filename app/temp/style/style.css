@@ -679,6 +679,7 @@ background: #2f5572;
 
 .side-nav__pages {
   position: fixed;
+  top: 25%;
   right: -6rem;
   background: #2f5572;
   width: 6.5rem;
@@ -703,6 +704,7 @@ background: #2f5572;
 
 .side-nav__menuArrow {
   position: fixed;
+  top: 25%;
   right: .5rem;
   -webkit-transform: scale(2);
           transform: scale(2);
@@ -831,6 +833,16 @@ padding: 1rem 2rem;
   text-align: center;
 }
 
+/* Begin Styling Elements */
+
+.footer__design-by {
+  color: #FFF;
+}
+
+.footer__design-by:hover {
+  color: #ffb647;
+}
+
 .nav li {
   display: inline-block;
   padding-right: 1em;
@@ -845,7 +857,7 @@ padding: 1rem 2rem;
   color: #ffb647;
 }
 
-.nav a:after {
+.nav a::after {
   content: '';
   display: block;
   margin: auto;
@@ -856,12 +868,12 @@ padding: 1rem 2rem;
   transition: all .3s ease;
 }
 
-.nav a:hover:after {
+.nav a:hover::after {
   width: 100%;
   background: #da1b1b;
 }
 
-.back-to-top {
+.back-to-top--icon {
   position: fixed;
   right: .25rem;
   bottom: 2.125rem;
@@ -870,11 +882,12 @@ padding: 1rem 2rem;
           transform: scale(.5);
   background: #ffb647;
   padding: 0;
+  box-shadow: 0 0 20px #000;
 }
 
 @media (min-width: 800px) {
 
-  .back-to-top {
+  .back-to-top--icon {
     -webkit-transform: scale(.75);
             transform: scale(.75);
     bottom: 1.5rem;

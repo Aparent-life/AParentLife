@@ -5,6 +5,7 @@
   /* Begin Styling Elements */
   &__pages {
     position: fixed;
+    top: 25%;
     right: -6rem;
     background: $mainBlue;
     width: 6.5rem;
@@ -28,6 +29,7 @@
 
   &__menuArrow {
     position: fixed;
+    top: 25%;
     right: .5rem;
     transform: scale(2);
     transform-origin: right center;
