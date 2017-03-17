@@ -63,57 +63,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _jquery = __webpack_require__(1);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var BackToTop = function () {
-  function BackToTop() {
-    _classCallCheck(this, BackToTop);
-
-    this.backToTopIcon = (0, _jquery2.default)('.back-to-top');
-    this.events();
-  }
-
-  _createClass(BackToTop, [{
-    key: 'events',
-    value: function events() {
-      this.backToTopIcon.click(this.BackToTop);
-    }
-  }, {
-    key: 'BackToTop',
-    value: function BackToTop() {
-      console.log('back-to-top');
-    }
-  }]);
-
-  return BackToTop;
-}();
-
-exports.default = BackToTop;
-
-/***/ }),
-/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10340,19 +10294,116 @@ return jQuery;
 
 
 /***/ }),
+/* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var BackToTop = function () {
+  function BackToTop() {
+    _classCallCheck(this, BackToTop);
+
+    this.backToTopIcon = (0, _jquery2.default)('.back-to-top');
+    this.events();
+  }
+
+  _createClass(BackToTop, [{
+    key: 'events',
+    value: function events() {
+      this.backToTopIcon.click(this.BackToTop);
+    }
+  }, {
+    key: 'BackToTop',
+    value: function BackToTop() {
+      console.log('back-to-top');
+    }
+  }]);
+
+  return BackToTop;
+}();
+
+exports.default = BackToTop;
+
+/***/ }),
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _BackToTop = __webpack_require__(0);
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var SideNavMenu = function () {
+  function SideNavMenu() {
+    _classCallCheck(this, SideNavMenu);
+
+    this.SideNavOpen = (0, _jquery2.default)('#SideNavMenuOpen');
+    this.events();
+  }
+
+  _createClass(SideNavMenu, [{
+    key: 'events',
+    value: function events() {
+      this.SideNavOpen.ready(this.SideNavOpen);
+    }
+  }, {
+    key: 'SideNavOpen',
+    value: function SideNavOpen() {
+      console.log('it works');
+    }
+  }]);
+
+  return SideNavMenu;
+}();
+
+exports.default = SideNavMenu;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _BackToTop = __webpack_require__(1);
 
 var _BackToTop2 = _interopRequireDefault(_BackToTop);
+
+var _SideNav = __webpack_require__(2);
+
+var _SideNav2 = _interopRequireDefault(_SideNav);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var backToTop = new _BackToTop2.default();
+var sideNav = new _SideNav2.default();
 
 /***/ })
 /******/ ]);
