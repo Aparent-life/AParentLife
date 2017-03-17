@@ -2,17 +2,17 @@
 
   &--icon {
     position: fixed;
-    right: .25rem;
-    bottom: 2.125rem;
+    bottom: 6.5rem;
     border-radius: 50%;
-    transform: scale(.5);
+    transform: scale(.45);
     background: $lightOrange;
     padding: 0;
     box-shadow: 0 0 20px #000;
 
+
     @mixin atMedium {
       transform: scale(.75);
-      bottom: 1.5rem;
+      bottom: 2.5rem;
     }
   }
 }

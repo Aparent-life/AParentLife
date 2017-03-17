@@ -1,5 +1,7 @@
 import BackToTop from './modules/BackToTop';
-import SideNavMenu from './modules/SideNav';
+import RevealOnScroll from './modules/RevealOnScroll';
+import $ from 'jquery';
 
 var backToTop = new BackToTop();
-var sideNav = new SideNavMenu();
+new RevealOnScroll($('.back-to-top'), '150%' );
+new RevealOnScroll($('.social-media'), '5%');

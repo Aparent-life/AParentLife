@@ -1,17 +1,14 @@
 import $ from 'jquery';
+import smoothScroll from 'jquery-smooth-scroll';
 
 class BackToTop {
   constructor() {
-    this.backToTopIcon = $('.back-to-top');
-    this.events();
+    this.backToTopIcon = $('.back-to-top a');
+    this.addSmoothScrolling();
   }
 
-  events() {
-    this.backToTopIcon.click(this.BackToTop);
-  }
-
-  BackToTop() {
-    console.log('back-to-top');
+  addSmoothScrolling() {
+    this.backToTopIcon.smoothScroll();
   }
 }
 
