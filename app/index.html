@@ -12,6 +12,7 @@
     <title>Home: AParent-Life</title>
 
   <link rel="stylesheet" href="temp/style/style.css">
+  <script src="/temp/scripts/Vendor.js"></script>
 </head>
 <body>
 
@@ -21,12 +22,11 @@
       <label for="menuToggler" class="side-nav__menuArrow">◀</label>
       <nav class="side-nav__pages">
           <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="Training.html">Training</a></li>
             <li><a href="Nutrition.html">Nutrition</a></li>
             <li><a href="Parenting.html">Parenting</a></li>
               <!--
-                **Used for other pages to navigate back to Home Page
-                <li><a href="Index.html">AParent-Life</a></li>
                  **Used for contact form or modal pop-up
                  <li><a href="Contact.html">Contact</a></li>
                  **Used for social media
@@ -40,14 +40,14 @@
         <picture>
           <source srcset="/assets/images/YT-CoverArt.png" media="(min-width: 990px)">
           <source srcset="/assets/images/YT-CoverArt-medium.png" media="(min-width: 640px)">
-          <img sizes="" srcset="/assets/images/YT-CoverArt-small.png" alt="A Parent Life - Victor and Issy">
+          <img class="lazyload" sizes="" data-srcset="/assets/images/YT-CoverArt-small.png" alt="A Parent Life - Victor and Issy">
         </picture>
     </section>
 
     <aside class="social-media social-media__icons">
-        <a href="https://www.facebook.com/VentoPowah/"><span class="icon icon--facebook social-media social-media__icons--facebook"></span></a>
-        <a href="https://twitter.com/VentoPowah"><span class="icon icon--twitter social-media__icons--twitter"></span></a>
-        <a href="https://www.youtube.com/channel/UCnB2DINdxvoesmQTd23iWVw?view_as=subscriber"><span class=" icon icon--youtube social-media social-media__icons--youtube"></span></a>
+        <a href="https://www.facebook.com/VentoPowah/"><span class="social-media__icons icon icon--facebook "></span></a>
+        <a href="https://twitter.com/VentoPowah"><span class="social-media__icons icon icon--twitter "></span></a>
+        <a href="https://www.youtube.com/channel/UCnB2DINdxvoesmQTd23iWVw?view_as=subscriber"><span class="social-media__icons icon icon--youtube"></span></a>
     </aside>
 
     <main>

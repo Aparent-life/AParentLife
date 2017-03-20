@@ -7,7 +7,7 @@
     position: fixed;
     top: 25%;
     right: -6rem;
-    background: $mainBlue;
+    background: rgba(47, 85, 114, .6);
     width: 6.5rem;
     border-radius: .75rem 0 0 .75rem;
     transition: all .3s ease-out;
@@ -29,7 +29,7 @@
 
   &__menuArrow {
     position: fixed;
-    top: 25%;
+    top: 27.5%;
     right: .5rem;
     transform: scale(2);
     transform-origin: right center;

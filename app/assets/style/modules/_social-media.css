@@ -1,42 +1,56 @@
 .social-media {
 
-
 /* Begin Styling Elements */
   &__icons {
+    display: inline-block;
     position: fixed;
     flex: wrap;
     justify-content: space-between;
-    top: 20%;
     z-index: 2;
-    width: 2.5rem;
+    width: 72px;
+    height: 72px;
 
+    .icon {
+      display: block;
 
-/* Begin Styling Modifiers */
-    &--facebook {
-      display: flex;
-      padding: .25rem;
-      border-radius: .25rem;
-      background-color: $mainBlue;
-      box-shadow: 0 0 20px #000;
-      margin-bottom: .25rem;
+      /* Begin Styling Modifiers */
+          &--facebook {
+            display: flex;
+            top: 15%;
+            background-color: $mainBlue;
+            box-shadow: 0 0 20px #000;
+            margin-bottom: .25rem;
+
+            @mixin atSmall {
+              top: 20%;
+            }
+          }
+
+          &--twitter {
+            display: flex;
+            top: 23%;
+            background-color: $lightBlue;
+            box-shadow: 0 0 20px #000;
+            margin-bottom: .25rem;
+
+            @mixin atSmall {
+              top: 25%;
+            }
+          }
+
+          &--youtube {
+            display: flex;
+            top: 31%;
+            background-color: $mainRed;
+            box-shadow: 0 0 20px #000;
+
+            @mixin atSmall {
+              top: 30%;
+            }
+          }
     }
 
-    &--twitter {
-      display: flex;
-      padding: .25rem;
-      border-radius: .25rem;
-      background-color: $lightBlue;
-      box-shadow: 0 0 20px #000;
-      margin-bottom: .25rem;
-    }
 
-    &--youtube {
-      display: flex;
-      padding: .125rem;
-      border-radius: .5rem;
-      background-color: $mainRed;
-      box-shadow: 0 0 20px #000;
-    }
   }
 
 }

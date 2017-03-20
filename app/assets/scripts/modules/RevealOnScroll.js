@@ -3,10 +3,18 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 
 class RevealOnScroll {
   constructor(elem, offset) {
+    this.lazyImages = $('.lazyload');
     this.itemsToReveal = elem;
-    this.offsetPercentage = offset;
+    this.offsetPercentage =  $('.page-section');
     this.hideInitially();
     this.createWaypoints();
+    this.refreshWaypoints();
+  }
+
+  refreshWaypoints() {
+    this.lazyImages.on('load', function() {
+      Waypoint.refreshAll();
+    });
   }
 
   hideInitially() {
@@ -14,7 +22,7 @@ class RevealOnScroll {
   }
 
   createWaypoints() {
-    var currentObject = this; // This will select the currently selected Object ( in this case offsetPercentage)
+    var currentObject = this; // This will select the currently selected Object ( in this case we will use to select offsetPercentage)
     this.itemsToReveal.each(function() {
       var currentItem = this; // This will select all elements with a .reveal-item class
       new Waypoint({

@@ -5,7 +5,7 @@
     bottom: 6.5rem;
     border-radius: 50%;
     transform: scale(.45);
-    background: $lightOrange;
+    background: rgba(255, 182, 71, .5);
     padding: 0;
     box-shadow: 0 0 20px #000;
 
