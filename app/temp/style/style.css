@@ -876,20 +876,23 @@ padding: 1rem 2rem;
   color: #ffb647;
 }
 
-.nav a::after {
-  content: '';
-  display: block;
-  margin: auto;
-  height: 2px;
-  width: 0px;
-  background: transparent;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
-}
+@media (min-width: 800px) {
 
-.nav a:hover::after {
-  width: 100%;
-  background: #da1b1b;
+  .nav a::after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+
+  .nav a:hover::after {
+    width: 100%;
+    background: #da1b1b;
+  }
 }
 
 .back-to-top--icon {
@@ -928,41 +931,65 @@ padding: 1rem 2rem;
 Instead edit gulp/templates/sprite */
 
 .icon {
-      background-image: url('/assets/images/sprites/sprite-82decd01.svg');
+      background-image: url('/assets/images/sprites/sprite-f2771ec2.svg');
+    }
+
+.no-svg .icon {
+      background-image: url('/assets/images/sprites/sprite-f2771ec2.png');
     }
 
 .icon--back-to-top {
-    width: 81.333px;
-    height: 66.285px;
-    background-position: 99.47665976250671% 0;
+    width: 83.33px;
+    height: 68.29px;
+    background-position: 99.48427398852327% 0;
   }
+
+.no-svg .icon {
+      background-image: url('/assets/images/sprites/sprite-f2771ec2.png');
+    }
 
 .icon--facebook {
-    width: 21.23px;
-    height: 42.01px;
-    background-position: 95.38591203963836% 31.716828556390258%;
+    width: 23.23px;
+    height: 44.01px;
+    background-position: 96.44536582899327% 32.67620460309106%;
   }
+
+.no-svg .icon {
+      background-image: url('/assets/images/sprites/sprite-f2771ec2.png');
+    }
 
 .icon--instagram {
-    width: 42.01px;
-    height: 42.01px;
-    background-position: 77.12269272529858% 51.84219340638308%;
+    width: 44.01px;
+    height: 44.01px;
+    background-position: 77.38290298886942% 53.75855304081535%;
   }
 
+.no-svg .icon {
+      background-image: url('/assets/images/sprites/sprite-f2771ec2.png');
+    }
+
 .icon--menu-icon {
-    width: 134.957px;
-    height: 250.43px;
+    width: 136.96px;
+    height: 252.43px;
     background-position: 0 0;
   }
 
+.no-svg .icon {
+      background-image: url('/assets/images/sprites/sprite-f2771ec2.png');
+    }
+
 .icon--twitter {
-    width: 51.78px;
-    height: 42.06px;
-    background-position: 81.68321026510107% 31.724418493347372%;
+    width: 53.78px;
+    height: 44.06px;
+    background-position: 81.90407845951441% 32.684024121757446%;
   }
 
+.no-svg .icon {
+      background-image: url('/assets/images/sprites/sprite-f2771ec2.png');
+    }
+
 .icon--youtube {
-    width: 34.75px;
-    height: 42px;
-    background-position: 97.10123456790122% 51.83971291866029%;
+    width: 36.75px;
+    height: 44px;
+    background-position: 98.21981004070557% 53.75598086124402%;
   }

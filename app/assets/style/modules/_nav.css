@@ -13,19 +13,21 @@
       color: $lightOrange;
     }
 
-    &::after {
-      content: '';
-       display: block;
-       margin: auto;
-       height: 2px;
-       width: 0px;
-       background: transparent;
-       transition: all .3s ease;
-    }
+    @mixin atMedium {
+      &::after {
+        content: '';
+         display: block;
+         margin: auto;
+         height: 2px;
+         width: 0px;
+         background: transparent;
+         transition: all .3s ease;
+      }
 
-    &:hover::after {
-      width: 100%;
-      background: $mainRed;
+      &:hover::after {
+        width: 100%;
+        background: $mainRed;
+      }
     }
   }
 }
